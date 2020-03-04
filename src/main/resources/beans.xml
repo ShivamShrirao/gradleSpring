@@ -8,8 +8,6 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context-4.0.xsd">
     <context:component-scan base-package="gradleSpring"></context:component-scan>
-    <bean id = "tyre" class = "gradleSpring.Tyre">
-<!--        <property name="brand" value="Ceat"></property>-->
-        <constructor-arg value="MRF"></constructor-arg>
-    </bean>
+
+<!--    <bean id = "tyre" class = "gradleSpring.Tyre"></bean>-->
 </beans>

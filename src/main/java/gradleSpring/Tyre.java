@@ -1,11 +1,10 @@
 package gradleSpring;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Tyre {
     private String Brand;
-
-    public Tyre(String brand) {
-        Brand = brand;
-    }
 
     public String getBrand() {
         return Brand;

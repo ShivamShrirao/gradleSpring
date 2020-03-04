@@ -1,14 +1,12 @@
 package gradleSpring;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class mainApp {
     public static void main(String[] args) {
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");
-        Car obj = (Car)ctx.getBean("car");
-        obj.drive();
-//        Tyre t = (Tyre)ctx.getBean("tyre");
-//        System.out.println(t);
+        ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
+        Samsung s = ctx.getBean(Samsung.class);
+        s.config();
     }
 }
